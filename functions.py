@@ -16,9 +16,9 @@ def plot_formation(z):
     N, M = B.shape
     
     # edge set
-    edges = np.where(B.flatten()!=0)[0].reshape((2,M)) % 7
-    # edges[edges == 0] = N
-    # edges -= 1
+    edges = (np.where(B.flatten('F')!=0)[0].reshape((2,M)) + 1) % N
+    edges[edges == 0] = N
+    edges -= 1
     
     # target formation
     plt.figure()
