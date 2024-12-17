@@ -37,8 +37,8 @@ def plot_formation(z):
     
     # Step 2: Plot the formation
     plt.figure()
-    plt.gca().set_aspect('equal')  # Set aspect ratio to make the plot square
-    plt.axis([-2, 2, -2, 2])       # Set axis limits
+    #plt.gca().set_aspect('equal')  # Set aspect ratio to make the plot square
+    #plt.axis([-2, 2, -2, 2])       # Set axis limits
     
     # Plot edges (connections between nodes)
     for edge in edges:
