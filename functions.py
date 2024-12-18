@@ -66,3 +66,4 @@ def plot_formation(z, goal=None):
     ax.set_xlabel('# timesteps')
     ax.set_ylabel('Error')
     ax.set_title('Error in the formation')
+    return fig
